@@ -6,13 +6,18 @@
     <title></title>
 </head>
 <body>
-    a <input type="text" id="a"><br />
-    b <input type="text" id="b"><br />
-    op <input type="text" id="op"><br />
-    <input type="button" value=" Result " id = "btnRes" onclick="goCalc()"><br />
-    res <input type="text" id="res"><br />
-    
-    
+<form action="<?php echo $PHP_SELF;?>" method="post">
+    Number 1 <input type="text" id="a" name="a"><br />
+    Number 2 <input type="text" id="b" name="b"><br />
+    Operator <input type="text" id="op" name="op"><br />
+    Result <input type="text" id="res"><br />
+    <input type="submit" value=" Result " id = "btnRes" onclick="goCalc()"><br />
+</form>
+
+<?
+echo "Hello, ".$Fname." ".$Lname.".<br />";
+?>
+
     <script type="text/javascript">
 
         function goCalc()
