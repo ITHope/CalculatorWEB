@@ -7,10 +7,10 @@
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
-          <root url="phar://$MODULE_DIR$/phpunit-6.4.3.phar/" />
+          <root url="phar://$MODULE_DIR$/CalculatorWebTb/phpunit-6.4.3.phar/" />
         </CLASSES>
         <SOURCES>
-          <root url="phar://$MODULE_DIR$/phpunit-6.4.3.phar/" />
+          <root url="phar://$MODULE_DIR$/CalculatorWebTb/phpunit-6.4.3.phar/" />
         </SOURCES>
       </library>
     </orderEntry>

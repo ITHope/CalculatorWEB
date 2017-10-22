@@ -8,7 +8,7 @@
 <body>
 
 <?php
-
+include(CalcClass::class);
 $a = 0;
 $b = 0;
 $op = 0;
@@ -31,6 +31,10 @@ if (isset($the_request['a']) && $the_request['b'] && $the_request['op']) {
     $op = rawurldecode($op);
     $res = $the_request['res'];
 
+    $calc = new CalcClass();
+
+    $res = $calc::Calc($a, $b, $op);
+    /*
     switch ($op) {
         case "+":
             $res = $a + $b;
@@ -44,6 +48,7 @@ if (isset($the_request['a']) && $the_request['b'] && $the_request['op']) {
         case "/":
             $res = $a / $b;
     }
+    */
 }
 
 ?>
