@@ -6,6 +6,7 @@
     <title></title>
 </head>
 <body>
+
     <input type="text" id="tbCalc" /><p>
     <input type="button" value="0" id="btn0" onclick="fNum(this)" />
     <input type="button" value="1" id="btn1" onclick="fNum(this)" />
@@ -27,10 +28,8 @@
 
     <script type="text/javascript">
 
-        var aTxt;
-        var bTxt;
+        var num1Txt;
         var opStr;
-
 
         function fNum(p)
         {
@@ -41,7 +40,7 @@
         {
             if (p.value == '=')
             {
-                var aNum = parseInt(aTxt);
+                var aNum = parseInt(num1Txt);
                 var bNum = parseInt(tbCalc.value);
                 var oPer = opStr;
                 var res = CalcN(aNum, bNum, oPer);
@@ -49,7 +48,7 @@
             }
             else
             {
-                aTxt = tbCalc.value;
+                num1Txt = tbCalc.value;
                 tbCalc.value = "";
                 opStr = p.value;
             }
